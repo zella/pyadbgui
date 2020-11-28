@@ -1,0 +1,11 @@
+adb-shell==0.2.3
+blessed==1.17.11
+cffi==1.14.4
+cryptography==3.2.1
+libusb1==1.8
+prompt-toolkit==3.0.8
+pyasn1==0.4.8
+pycparser==2.20
+rsa==4.6
+six==1.15.0
+wcwidth==0.2.5
