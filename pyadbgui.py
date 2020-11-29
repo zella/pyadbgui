@@ -5,6 +5,7 @@ from prompt_toolkit.shortcuts import checkboxlist_dialog
 from adb_shell.auth import keygen
 from os.path import expanduser
 import os
+import time
 
 
 def adb_connect():
@@ -62,6 +63,9 @@ def ui_confirm_to_delete(apps):
     return results
 
 
+print('Убедитесь, что отладка по usb включена.')
+time.sleep(1)
+print('Подтверите подключение на устройстве ...')
 device = adb_connect()
 apps = adb_load_apps(device)
 selected_apps = ui_select_apps(apps)
