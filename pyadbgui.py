@@ -84,4 +84,7 @@ if selected_apps:
         print("Обработано {} из {}".format(idx, total))
     print("Удалено {} из {} приложений".format(ok, total))
 else:
-    print("Bye-bye")
+    print("Ничего не выбрано")
+
+
+input("Нажмите Ввод для выхода...")
