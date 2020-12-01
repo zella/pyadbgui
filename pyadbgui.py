@@ -48,7 +48,7 @@ def adb_try_remove_package(device, app):
 def ui_select_apps(apps):
     results = checkboxlist_dialog(
         title="Выберите приложения для удаления",
-        text="",
+        text="Внимание! Удаление системных приложений может нарушить работоспособность устрйоства!",
         values=list(map(lambda x: (x, x), apps))
     ).run()
     return results
@@ -56,7 +56,7 @@ def ui_select_apps(apps):
 
 def ui_confirm_to_delete(apps):
     results = checkboxlist_dialog(
-        title="Для подтверждения удаления еще раз выберете приложения",
+        title="Для подтверждения удаления еще раз выберите приложения",
         text="Внимание! Данные приложений будут потеряны",
         values=list(map(lambda x: (x, x), apps))
     ).run()

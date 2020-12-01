@@ -17,6 +17,7 @@
 
 ### Как собрать из исходников
 
+**Linux**
 ```
 cd ../pyadbgui
 python3 -m venv env
@@ -24,7 +25,12 @@ source env/bin/activate
 pip3 install -r requirements.txt
 pyinstaller --onefile pyadbgui.py
 ```
+**Windows**  
 
+Для запуска требуется `libusb-1.0.dll`
+```
+TODO должно собираться стандартым методом
+```
 
 ### TODO
-* Сборка для windows. (проблемы с libusb, ругается антивирус)
+* Сборка для mac
