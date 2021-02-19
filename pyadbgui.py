@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from adb_shell.adb_device import AdbDeviceUsb
 from adb_shell.auth.sign_pythonrsa import PythonRSASigner
-from prompt_toolkit.shortcuts import checkboxlist_dialog
+from dialogs_forked import checkboxlist_dialog
 from adb_shell.auth import keygen
 from os.path import expanduser
 import os
